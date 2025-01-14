@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-function App() {
-    return (<h1>Hello World!</h1>);
-}
+import { CounterApp } from './CounterApp';
+
+import './styles.css';
 
 // Render
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
-        <App />
+        <CounterApp value={ 0 } />
     </React.StrictMode>
 );
